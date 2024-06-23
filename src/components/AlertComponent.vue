@@ -21,12 +21,15 @@ export default {
         }
     },
     watch: {
-        show() {
-            this.showInner = this.show
+        show: function(val) {
+            console.log('var changed')
+            this.showInner = val
             setTimeout(() => {
+                console.log('timeout executed')
                 this.$emit('close')
                 this.showInner = false
             }, 3000);
+            console.log('var changed end')
         }
     }
 }
