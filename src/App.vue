@@ -1,15 +1,18 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <AlertComponentVue :show="show" title="Test" message="Test"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AlertComponentVue from './components/AlertComponent.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AlertComponentVue
+  },
+  data() {
+    return {
+      show: false
+    }
   }
 }
 </script>

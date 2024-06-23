@@ -2,9 +2,12 @@
   "name": "simple-alerts",
   "version": "0.1.0",
   "private": true,
+  "main": "./dist/simpleAlertsVue.common.js",
+  "description": "A simple vue alert component",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:npm": "vue-cli-service build --target lib --name simpleAlertsVue src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -39,5 +42,8 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
+  ],
+  "files": [
+    "dist/*"
   ]
 }
