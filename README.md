@@ -68,13 +68,14 @@ export default {
 ### Customization
 You can customize the styles of the alerts by modifying the CSS classes defined in the **AlertComponent.vue** file.
 
-CSS Classes
-.main-alert: Styles the main container of the alert.
-.inner-alert: Styles the inner content of the alert.
-.show: Controls the appearance of the alert when shown.
-.hide: Controls the appearance of the alert when hidden.
-.close-button: Styles the close button of the alert.
-License
+### CSS Classes
+- main-alert: Styles the main container of the alert.
+- inner-alert: Styles the inner content of the alert.
+- show: Controls the appearance of the alert when shown.
+- hide: Controls the appearance of the alert when hidden.
+- close-button: Styles the close button of the alert.
+
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 You can add this documentation to your README.md file. Feel free to customize and expand upon it as needed for your project.
