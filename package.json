@@ -1,6 +1,6 @@
 {
   "name": "simple-alerts",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
   "main": "./dist/simpleAlertsVue.common.js",
   "description": "A simple vue alert component",
