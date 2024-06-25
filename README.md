@@ -11,12 +11,6 @@ To install Simple-Alerts, you can use npm or yarn:
 npm install simple-alerts
 ```
 
-or
-
-```
-yarn add simple-alerts
-```
-
 ### Usage
 #### AlertComponent
 The **AlertComponent** is the main component provided by the Simple-Alerts library. It allows you to display alerts with customizable properties.
