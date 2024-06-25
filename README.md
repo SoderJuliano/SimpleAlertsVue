@@ -85,11 +85,9 @@ You can customize the styles of the alerts by modifying the CSS classes defined 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-You can add this documentation to your README.md file. Feel free to customize and expand upon it as needed for your project.
+## Default vue installation doc
 
-#### Default vue installation doc
-
-## Project setup
+### Project setup
 
 ```
 npm install
