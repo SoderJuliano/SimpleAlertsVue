@@ -82,10 +82,11 @@ export default {
         border-radius: 10px;
         background-color: #fff;
         width: 400px;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0,0,0,0.65);
         display: flex;
         justify-content: center;
         align-items: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     .inner-alert {
         width: 100%;
