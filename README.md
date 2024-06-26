@@ -26,6 +26,10 @@ The **AlertComponent** is the main component provided by the Simple-Alerts libra
 ##### Import vue component and css
 ![How-to-use](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/2a3b0035-2b8d-42ca-908f-7a0ce86e5239)
 
+Gif:
+[SimpleAlert.webm](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/89ed2baf-d39f-44ec-90eb-225493b4caf3)
+
+
 #### Customize options
 ![data-options](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/c7fafdee-4b6b-4232-a1a6-5f84b984ae49)
 
