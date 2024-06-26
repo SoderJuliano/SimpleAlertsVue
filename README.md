@@ -27,6 +27,8 @@ The **AlertComponent** is the main component provided by the Simple-Alerts libra
 ![How-to-use](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/2a3b0035-2b8d-42ca-908f-7a0ce86e5239)
 
 Gif:
+![SimpleAlert](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/b8bffe6b-978f-47f8-ae14-e1a16d567341)
+Video:
 [SimpleAlert.webm](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/89ed2baf-d39f-44ec-90eb-225493b4caf3)
 
 
