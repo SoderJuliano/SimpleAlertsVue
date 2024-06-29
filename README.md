@@ -16,13 +16,31 @@ npm install simple-alerts
 The **AlertComponent** is the main component provided by the Simple-Alerts library. It allows you to display alerts with customizable properties.
 
 ### Props
-**title** (String): The title of the alert.
-**message** (String): The message to be displayed in the alert.
-**show** (AlertComponent.vue:55:9-71:10) (Boolean): Controls the visibility of the alert.
-**custom** (Boolean): Indicates whether custom properties should be applied.
-**customProperties** (Object): An object containing custom properties for the alert.
+- **title** (String): The title of the alert.
+- **message** (String): The message to be displayed in the alert.
+- **show** (AlertComponent.vue:55:9-71:10) (Boolean): Controls the visibility of the alert.
+- **custom** (Boolean): Indicates whether custom properties should be applied.
+- **customProperties** (Object): An object containing custom properties for the alert.
 
-### Example
+### Examples
+##### Import vue component and css
+![How-to-use](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/2a3b0035-2b8d-42ca-908f-7a0ce86e5239)
+
+Gif:
+![SimpleAlert](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/b8bffe6b-978f-47f8-ae14-e1a16d567341)
+Video:
+[SimpleAlert.webm](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/89ed2baf-d39f-44ec-90eb-225493b4caf3)
+
+
+#### Customize options
+![data-options](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/c7fafdee-4b6b-4232-a1a6-5f84b984ae49)
+
+#### Customize css
+![data-options (1)](https://github.com/SoderJuliano/SimpleAlertsVue/assets/16232185/eded7295-cab2-4fa0-8cca-e3fcb39ba7fd)
+
+
+
+#### Full code as text exempple
 ```
 <template>
   <AlertComponent
@@ -59,6 +77,7 @@ export default {
 }
 </script>
 ```
+
 ### Customization
 You can customize the styles of the alerts by modifying the CSS classes defined in the **AlertComponent.vue** file.
 
@@ -72,11 +91,9 @@ You can customize the styles of the alerts by modifying the CSS classes defined 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-You can add this documentation to your README.md file. Feel free to customize and expand upon it as needed for your project.
+## Default vue installation doc
 
-#### Default vue installation doc
-
-## Project setup
+### Project setup
 
 ```
 npm install
