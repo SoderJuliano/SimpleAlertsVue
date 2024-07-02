@@ -117,6 +117,12 @@ npm run build
 npm run lint
 ```
 
+### Releases
+
+0.1.9
+
+https://github.com/SoderJuliano/SimpleAlertsVue/releases/tag/0.1.9
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
