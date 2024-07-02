@@ -1,10 +1,14 @@
 <template>
+  <button @click="show = true">test alert</button>
   <AlertComponentVue
-  :show="show"
-  title="Title"
-  message="Test text"
-  :custom="true"
-  :customProperties="alert"
+      title="Title"
+      message="Test text"
+      confirm="true"
+      @close="closeAlert"
+      @confirm="confirm"
+      :show="show"
+      :custom="true"
+      :customProperties="alert"
   />
 </template>
 
@@ -17,9 +21,9 @@ export default {
   },
   data() {
     return {
-      show: true,
+      show: false,
       alert: {
-        autoClose: true,
+        autoClose: false,
         timer: 1000,
         backgroundColor: 'red',
         textColor: 'white',
@@ -28,6 +32,15 @@ export default {
         // You can write your own css class and pas it as prop
         customCssClass: 'alert-custom-css-class'
       }
+    }
+  },
+  methods: {
+    closeAlert() {
+      this.show = false
+    },
+    confirm(value) {
+      console.log(value)
+      this.closeAlert()
     }
   }
 }
