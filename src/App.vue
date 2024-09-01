@@ -6,6 +6,14 @@
       confirm="true"
       @close="closeAlert"
       @confirm="confirm"
+      :show="false"
+      :custom="true"
+      :customProperties="alert"
+  />
+  <AlertComponentVue
+      title="AlertComponentVue"
+      message="Test AlertComponentVue"
+      @close="closeAlert"
       :show="show"
       :custom="true"
       :customProperties="alert"
@@ -26,9 +34,10 @@ export default {
         autoClose: false,
         timer: 1000,
         backgroundColor: 'red',
-        textColor: 'white',
-        closeButton: false,
+        textColor: 'black',
+        closeButton: true,
         closeButtonText: 'Close',
+        closeButtomPosition: 'bottom',
         // You can write your own css class and pas it as prop
         customCssClass: 'alert-custom-css-class'
       }

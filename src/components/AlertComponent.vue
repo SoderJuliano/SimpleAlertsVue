@@ -19,16 +19,18 @@
     </div>
     <div
         v-else class="main-alert"
-        :style="{backgroundColor: customProperties?.backgroundColor,
-            color: customProperties?.textColor}"
+        :style="{backgroundColor: customProperties?.backgroundColor}"
         :class="[customProperties?.customCssClass, showInner ? 'show' : 'hide']">
-        <button class="close-button" @click="$emit('close')" v-if="customProperties?.closeButton">
+        <button class="close-button" @click="$emit('close')" v-if="customProperties?.closeButton && !customProperties?.closeButtomPosition">
             {{customProperties?.closeButtonText}}
         </button>
         <img alt="close" class="close-button" src="../assets/close.png" v-if="!customProperties?.closeButton" @click="$emit('close')" />
-        <div class="inner-alert">
+        <div :style="{color: customProperties?.textColor}" class="inner-alert">
             <h3>{{title}}</h3>
             <p>{{message}}</p>
+            <button class="close-button-bottom" @click="$emit('close')" v-if="customProperties?.closeButton && customProperties?.closeButtomPosition == 'bottom'">
+                {{customProperties?.closeButtonText}}
+            </button>
         </div>
     </div>
 </template>
@@ -42,6 +44,16 @@ export default {
         show: Boolean,
         custom: Boolean,
         customProperties: Object,
+        // exemple of customProperties: {
+        //     autoClose: false,
+        //     timer: 1000,
+        //     backgroundColor: 'red',
+        //     textColor: 'black',
+        //     closeButton: true,
+        //     closeButtonText: 'Close',
+        //     closeButtomPosition: 'null (default - rigth top) / bottom'
+        //     customCssClass: 'alert-custom-css-class'
+        // }
         confirm: Boolean,
         confirmText: String,
         confirmmCancelText: String
@@ -134,6 +146,14 @@ export default {
         top: 1%;
         right: 1%;
         padding: 5px;
+        border-radius: 5px;
+    }
+
+    .close-button-bottom {
+        padding: 5px;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     /* Confirm css */
