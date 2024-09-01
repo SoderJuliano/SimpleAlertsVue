@@ -91,6 +91,29 @@ You can customize the styles of the alerts by modifying the CSS classes defined 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+----------------------------------
+## Update 0.1.9 changelogs
+
+### Add a confirm option
+* Now we can send a confirmatio poup-up just setting some props as we see below
+![comfirm](image-1.png)
+
+Also the feedbacks of buttons interactions are true and false:
+ - CANCEL = FALSE
+ - COMFIRM = TRUE
+
+
+## Update 0.2.0 changelogs
+
+### BUGFIX
+
+* Now the text color passsed by props on customProperties.textColor its set as !important and in the right place
+
+### Option to reposition custom close button
+
+* Now we can put the close button from right-top to the bottom
+![close button](image.png)
+
 ## Default vue installation doc
 
 ### Project setup
@@ -120,3 +143,10 @@ npm run lint
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+## Deploy on npm
+
+* npm login
+* manually update version or build may update itself
+* npm run build
+* npm publish
