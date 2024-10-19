@@ -1,13 +1,12 @@
 import AlertComponent from './components/AlertComponent.vue';
 import { showAlert } from './components/showAlert';
 
-export { showAlert };
 
 export function install(app) {
     if (install.installed) return;
     install.installed = true;
     app.component('simple-alerts-vue', AlertComponent);
-    app.config.globalProperties.$showAlert = showAlert;
+    app.component('showAlert', showAlert);
 }
 
 const plugin = {
@@ -24,4 +23,5 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default plugin;
+export { showAlert };
+export default AlertComponent;
