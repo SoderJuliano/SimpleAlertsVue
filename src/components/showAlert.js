@@ -1,5 +1,5 @@
 import Vue from 'vue';
-import AlertComponent from './components/AlertComponent.vue';
+import AlertComponent from './AlertComponent.vue';
 
 let alertInstance = null;
 

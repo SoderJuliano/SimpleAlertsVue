@@ -160,5 +160,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 * npm login
 * manually update version or build may update itself
-* npm run build
+* npm run build:npm
 * npm publish

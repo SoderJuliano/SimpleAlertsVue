@@ -1,5 +1,5 @@
 import AlertComponent from './components/AlertComponent.vue';
-import { showAlert } from './showAlert';
+import { showAlert } from './components/showAlert';
 
 export function install(app) {
     if (install.installed) return;
