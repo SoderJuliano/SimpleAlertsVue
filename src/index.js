@@ -7,6 +7,7 @@ export function install(app) {
     if (install.installed) return;
     install.installed = true;
     app.component('simple-alerts-vue', AlertComponent);
+    app.config.globalProperties.$showAlert = showAlert;
 }
 
 const plugin = {
@@ -23,4 +24,4 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default AlertComponent;
+export default plugin;
