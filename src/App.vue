@@ -1,5 +1,6 @@
 <template>
-  <button @click="show = true">test alert</button>
+  <button @click="show = true">test alert component</button>
+  <button @click="showAlert('testing alert')" >test js alert</button>
   <AlertComponentVue
       title="Title"
       message="Test text"
@@ -21,6 +22,7 @@
 </template>
 
 <script>
+import { showAlert } from './components/showAlert';
 import AlertComponentVue from './components/AlertComponent.vue'
 export default {
   name: 'App',
@@ -50,7 +52,11 @@ export default {
     confirm(value) {
       console.log(value)
       this.closeAlert()
-    }
+    },
+    showAlert
+  },
+  mounted() {
+    // showAlert("Welcome back")
   }
 }
 </script>
