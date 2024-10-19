@@ -150,6 +150,12 @@ https://github.com/SoderJuliano/SimpleAlertsVue/releases/tag/0.1.9
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## For deploy new versions
+
+* npm version patch // for bug fixes
+* npm version minor // for simple new features
+* npm version major // for features that do not have compatibility whith previous code
+
 ## Deploy on npm
 
 * npm login
