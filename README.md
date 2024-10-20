@@ -80,13 +80,16 @@ export default {
 
 ### New on version 0.3.9
 
+* No need import component anymore to use the simplest alert, only import a method;
+  
 ```
 <button @click="testMethod">test alert here</button>
 <script>
+import { showAlert } from 'simple-alerts/dist/showAlert.js'
 testMethod() {
-  showAlert("hello world")
+  showAlert("hello world");
 },
-<script>
+</script>
 ```
 
 ### Customization
