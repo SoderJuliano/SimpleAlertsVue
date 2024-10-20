@@ -1,7 +1,8 @@
 <template>
   <button @click="show = true">test alert component</button>
-  <button @click="showAlert('testing alert')" >test js alert</button>
+  <button @click="callAlertMethod" >test js alert</button>
   <AlertComponentVue
+      ref="alertComponent"
       title="Title"
       message="Test text"
       confirm="true"
@@ -46,6 +47,9 @@ export default {
     }
   },
   methods: {
+    callAlertMethod() {
+      this.$refs.alertComponent.alert('test');
+    },
     closeAlert() {
       this.show = false
     },

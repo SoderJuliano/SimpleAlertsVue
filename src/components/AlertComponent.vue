@@ -35,6 +35,7 @@
     </div>
 </template>
 <script>
+import * as alert from "./showAlert.js"
 export default {
     name: 'AlertComponent',
     emits: ['close'],
@@ -66,7 +67,12 @@ export default {
         }
     },
     methods: {
+        alert(text) {
+            console.log('dentro do AlertComponent')
+            alert.showAlert(text);
+        }
     },
+    
     /**
      * Watches for changes in the 'show' prop.
      * If 'show' is true and 'custom' is false,
