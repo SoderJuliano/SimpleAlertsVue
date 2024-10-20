@@ -1,6 +1,5 @@
 import AlertComponent from './components/AlertComponent.vue';
 
-
 export function install(app) {
     if (install.installed) return;
     install.installed = true;
@@ -21,4 +20,7 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default AlertComponent;
+export default {
+    install,
+    AlertComponent,
+};

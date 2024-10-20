@@ -66,13 +66,19 @@ export default {
             confirmAlert: this.confirm ? true : false
         }
     },
-    methods: {
-        alert(text) {
-            console.log('dentro do AlertComponent')
-            alert.showAlert(text);
-        }
+    setup(_, { expose }) {
+        // Método de alerta que queremos expor
+        const alertMethod = (text) => {
+        console.log('dentro do AlertComponent');
+        alert.showAlert(text);
+        };
+
+        // Expondo o método 'alert' para ser acessado externamente
+        expose({
+        alert: alertMethod,
+        });
     },
-    
+
     /**
      * Watches for changes in the 'show' prop.
      * If 'show' is true and 'custom' is false,
