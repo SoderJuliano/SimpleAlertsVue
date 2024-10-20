@@ -78,6 +78,17 @@ export default {
 </script>
 ```
 
+### New on version 0.3.9
+
+```
+<button @click="testMethod">test alert here</button>
+<script>
+testMethod() {
+  showAlert("hello world")
+},
+<script>
+```
+
 ### Customization
 You can customize the styles of the alerts by modifying the CSS classes defined in the **AlertComponent.vue** file.
 
@@ -149,9 +160,7 @@ https://github.com/SoderJuliano/SimpleAlertsVue/releases/tag/0.1.9
 
 0.3.9
 
-* Now you can import a direct js file fire the alert with no needed insert the SimpleAlert component into your html code;
-  - Import as ``` import { showAlert } from 'simple-alerts/dist/showAlert.js' ```
-  - run as ``` showAlert("hello word") ````
+https://github.com/SoderJuliano/SimpleAlertsVue/releases/tag/0.3.9
 
 
 ### Customize configuration
