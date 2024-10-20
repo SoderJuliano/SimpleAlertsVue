@@ -146,6 +146,14 @@ npm run lint
 
 https://github.com/SoderJuliano/SimpleAlertsVue/releases/tag/0.1.9
 
+
+0.3.9
+
+* Now you can import a direct js file fire the alert with no needed insert the SimpleAlert component into your html code;
+  - Import as ``` import { showAlert } from 'simple-alerts/dist/showAlert.js' ```
+  - run as ``` showAlert("hello word") ````
+
+
 ### Customize configuration
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
