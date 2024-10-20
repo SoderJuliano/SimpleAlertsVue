@@ -35,7 +35,6 @@
     </div>
 </template>
 <script>
-import * as alert from "./showAlert.js"
 export default {
     name: 'AlertComponent',
     emits: ['close'],
@@ -65,18 +64,6 @@ export default {
             isDefault: this.custom ? false : true,
             confirmAlert: this.confirm ? true : false
         }
-    },
-    setup(_, { expose }) {
-        // Método de alerta que queremos expor
-        const alertMethod = (text) => {
-        console.log('dentro do AlertComponent');
-        alert.showAlert(text);
-        };
-
-        // Expondo o método 'alert' para ser acessado externamente
-        expose({
-        alert: alertMethod,
-        });
     },
 
     /**

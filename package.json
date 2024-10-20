@@ -7,8 +7,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:npm": "vue-cli-service build --target lib --name simpleAlertsVue src/index.js",
-    "lint": "vue-cli-service lint"
+    "build:npm": "vue-cli-service build --target lib --name simpleAlertsVue src/index.js && cp src/components/showAlert.js dist/",
+    "lint": "vue-cli-service lint",
+    "postbuild": "cp src/components/showAlert.js dist/"
   },
   "dependencies": {
     "core-js": "^3.8.3",
