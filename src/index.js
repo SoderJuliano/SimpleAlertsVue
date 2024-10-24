@@ -20,7 +20,4 @@ if (GlobalVue) {
     GlobalVue.use(plugin);
 }
 
-export default {
-    install,
-    AlertComponent,
-};
+export default AlertComponent;
