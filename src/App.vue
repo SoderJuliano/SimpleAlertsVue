@@ -1,6 +1,7 @@
 <template>
   <button @click="show = true">test alert component</button>
   <button @click="callAlertMethod" >test js alert</button>
+  <button @click="this.show3 = true" >test js alert3</button>
   <AlertComponentVue
       title="Title"
       message="Test text"
@@ -18,6 +19,14 @@
       :show="show"
       :custom="true"
       :customProperties="alert"
+  />
+  <AlertComponentVue
+      title="'Simple close'"
+      message="Test closing"
+      @close="closeAlert"
+      :show="show3"
+      :custom="true"
+      :customProperties="alert3"
   />
 </template>
 
@@ -42,7 +51,15 @@ export default {
         closeButtomPosition: 'bottom',
         // You can write your own css class and pas it as prop
         customCssClass: 'alert-custom-css-class'
-      }
+      },
+      show3: false,
+      alert3: {
+          autoClose: false,
+          timer: 5000,
+          backgroundColor: 'black',
+          textColor: 'white',
+          closeButtonText: 'Close',
+        },
     }
   },
   methods: {
@@ -51,6 +68,7 @@ export default {
     },
     closeAlert() {
       this.show = false
+      this.show3 = false
     },
     confirm(value) {
       console.log(value)

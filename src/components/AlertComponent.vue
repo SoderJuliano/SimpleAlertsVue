@@ -21,14 +21,16 @@
         v-else class="main-alert"
         :style="{backgroundColor: customProperties?.backgroundColor}"
         :class="[customProperties?.customCssClass, showInner ? 'show' : 'hide']">
-        <button class="close-button" @click="$emit('close')" v-if="customProperties?.closeButton && !customProperties?.closeButtomPosition">
+        <button class="close-button" @click="$emit('close')"
+            v-if="customProperties?.closeButton && !customProperties?.closeButtomPosition">
             {{customProperties?.closeButtonText}}
         </button>
         <img alt="close" class="close-button" src="../assets/close.png" v-if="!customProperties?.closeButton" @click="$emit('close')" />
         <div :style="{color: customProperties?.textColor}" class="inner-alert">
             <h3>{{title}}</h3>
             <p>{{message}}</p>
-            <button class="close-button-bottom" @click="$emit('close')" v-if="customProperties?.closeButton && customProperties?.closeButtomPosition == 'bottom'">
+            <button class="close-button-bottom" @click="$emit('close')"
+                v-if="customProperties?.closeButton && customProperties?.closeButtomPosition == 'bottom'">
                 {{customProperties?.closeButtonText}}
             </button>
         </div>
@@ -146,6 +148,7 @@ export default {
         right: 1%;
         padding: 5px;
         border-radius: 5px;
+        z-index: 100;
     }
 
     .close-button-bottom {
@@ -153,6 +156,7 @@ export default {
         border-radius: 5px;
         padding-left: 20px;
         padding-right: 20px;
+        z-index: 100;
     }
 
     /* Confirm css */
@@ -162,7 +166,8 @@ export default {
         justify-content: space-evenly;
         align-items: center;
         margin-top: 20px;
-        margin-bottom: 20px
+        margin-bottom: 20px;
+        z-index: 100;
     }
     .confirm-buttons button {
         padding: 5px 10px;
@@ -174,5 +179,6 @@ export default {
         cursor: pointer;
         width: 35%;
         min-height: 40px;
-    }   
+        z-index: 100;
+    }
 </style>
