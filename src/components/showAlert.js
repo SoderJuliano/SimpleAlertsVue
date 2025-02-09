@@ -45,7 +45,7 @@ export function showAlert(message) {
       transition: all 0.5s;
       opacity: 1;
       z-index: 10;
-      top: 2%;
+      top: 10%;
     }
     .hide {
       transition: all 0.5s;
@@ -66,6 +66,15 @@ export function showAlert(message) {
     }
     .closebtn:hover {
       color: black;
+    }
+
+    @media (max-width: 768px) {
+      .show {
+        top: 30% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 80dvw;
+      }
     }
   `;
   document.head.appendChild(style);
